@@ -10,6 +10,7 @@
 
   --body-bg-color: #11111f;
   --green-color: #8edd65;
+  --modal-bg-color: #1B1B33;
 }
 
 body {
@@ -101,4 +102,42 @@ main {
   background-color: var(--green-color);
   text-decoration: none;
   padding: 2.5rem 4.5rem;
+}
+
+.modal {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 38.2rem;
+  height: 52.4rem;
+  border-radius: 15px;
+  background-color: var(--modal-bg-color);
+  color: #fff;
+}
+
+.modal_title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .8rem;
+  margin-top: 5rem;
+}
+
+.modal_title .icon_modal{
+  width: 5rem;
+  height: 5rem;
+}
+
+.modal_title .modal_cashfy{
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.modal .welcome_text{
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
 }
