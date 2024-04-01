@@ -12,6 +12,7 @@
   --green-color: #8edd65;
   --modal-bg-color: #1b1b33;
   --input-bg-color: #252546;
+  --close-button-bg-color: #c4302b;
 }
 
 body {
@@ -70,6 +71,11 @@ main {
   margin-top: 5.3rem;
 }
 
+main.opacity,
+header.opacity {
+  opacity: 0.5;
+}
+
 .descriptions {
   width: 50%;
 }
@@ -120,12 +126,28 @@ main {
   color: #fff;
 }
 
+.close_modal {
+  display: flex;
+  justify-content: end;
+}
+
+.close_modal .btn_close {
+  background-color: var(--close-button-bg-color);
+  padding: 0.3rem 0.5rem;
+  margin: 0.8rem 0.5rem;
+  font-size: 10px;
+  color: #fff;
+  border: none;
+  border-radius: .2rem;
+  cursor: pointer;
+}
+
 .modal_title {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.8rem;
-  margin-top: 5rem;
+  margin-top: 3.5rem;
 }
 
 .modal_title .icon_modal {
@@ -191,24 +213,11 @@ main {
   background-color: var(--green-color);
 }
 
-#fade,
 #modal {
-  transition: 0.5;
+  transition: 1s all;
   opacity: 1;
 }
 
-#fade {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 0.5;
-  background-color: rgba(0, 0, 0, 1);
-  opacity: 0.5;
-  width: 100%;
-  height: 100vh;
-}
-
-#modal.hide,
-#fade.hide {
+#modal.hide {
   opacity: 0;
 }
