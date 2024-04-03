@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+  font-size: 62.5%; /* 1rem = 10px */
+
+  --body-bg-color: #11111f;
+  --green-color: #8edd65;
+  --modal-bg-color: #1b1b33;
+  --input-bg-color: #252546;
+  --close-button-bg-color: #c4302b;
+}
+
+body {
+  background-color: var(--body-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 5rem;
+  text-decoration: none;
+}
+
+.icon h3 {
+  color: #fff;
+  font-size: 2.4rem;
+}
+
+.desc h2{
+  font-size: 3.2rem;
+  color: #fff;
+  margin-top: 3rem;
+}
+
+.form {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.form .email,
+.form .password,
+.form .confirm_password{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.5rem;
+  font-size: 1.4rem;
+  gap: 0.8rem;
+}
+
+.form .email input,
+.form .password input,
+.form .confirm_password input {
+  background-color: var(--input-bg-color);
+  border: none;
+  padding: 1.3rem 2rem;
+  border-radius: 1rem;
+  color: #fff;
+}
+
+.btn_submit {
+  display: flex;
+  justify-content: center;
+}
+
+.btn_submit input {
+  height: 5.5rem;
+  width: 20rem;
+  font-size: 2.4rem;
+  border-radius: 4rem;
+  border: none;
+  color: #fff;
+  background-color: var(--green-color);
+  cursor: pointer;
+}
+
+.form label{
+  color: #fff;
+}
