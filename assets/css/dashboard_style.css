@@ -30,8 +30,8 @@ header {
 }
 
 .icon {
-  height: 7.4rem;
-  width: 7.4rem;
+  height: 4rem;
+  width: 4rem;
 }
 
 .icon_div {
@@ -44,7 +44,7 @@ header {
 
 .icon_div .title {
   color: white;
-  font-size: 2.4rem;
+  font-size: 1.4rem;
   font-weight: bold;
 }
 
@@ -65,7 +65,6 @@ header {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  background-color: red;
   margin-top: 2.5rem;
 }
 
@@ -75,6 +74,13 @@ header {
   width: 33.5rem;
   height: 15rem;
   border-radius: 1rem;
+  padding: 1rem;
+}
+
+.information .prohibited i,
+.information .expenses i,
+.information .balance i{
+  font-size: 2rem;
 }
 
 .information .prohibited{
@@ -87,4 +93,26 @@ header {
 
 .information .balance{
   background-color: #C9C9C9;
+}
+
+.information .prohibited span,
+.information .expenses span,
+.information .balance span{
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.div_header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.desc_money{
+  margin-top: 7rem;
+}
+
+.desc_money span .small_money{
+  font-size: 1.6rem;
 }
