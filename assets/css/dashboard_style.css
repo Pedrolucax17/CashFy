@@ -116,3 +116,53 @@ header {
 .desc_money span .small_money{
   font-size: 1.6rem;
 }
+
+.management{
+  margin: 5rem 6rem;
+}
+
+.management .title{
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 1.6rem;
+  padding: .5rem;
+}
+
+.result{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c9c9c9;
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  height: 5rem;
+  padding: .5rem;
+  border-radius: .5rem;
+}
+
+.management_icon{
+  display: flex;
+  gap: 1rem;
+}
+
+.management_icon .edit{
+  background-color: var(--green-color);
+}
+
+.management_icon .delete{
+  background-color: var(--bg-color-expense);
+}
+
+.management_icon .edit,
+.management_icon .delete{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  height: 3.5rem;
+  width: 3.5rem;
+}
