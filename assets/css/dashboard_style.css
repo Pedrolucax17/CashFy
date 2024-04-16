@@ -165,4 +165,120 @@ header {
   font-size: 1.2rem;
   height: 3.5rem;
   width: 3.5rem;
+  cursor: pointer;
+}
+
+.add button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 2rem;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 5rem;
+  width: 5rem;
+  cursor: pointer;
+  background-color: var(--modal-bg-color);
+  border: none;
+}
+
+#modal {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 38.2rem;
+  height: 52.4rem;
+  border-radius: 15px;
+  background-color: var(--modal-bg-color);
+  color: #fff;
+}
+
+.close_modal {
+  display: flex;
+  justify-content: end;
+}
+
+.close_modal .btn_close {
+  background-color: var(--close-button-bg-color);
+  padding: 0.3rem 0.5rem;
+  margin: 0.8rem 0.5rem;
+  font-size: 10px;
+  color: #fff;
+  border: none;
+  border-radius: .2rem;
+  cursor: pointer;
+}
+
+#modal .welcome_text {
+  margin: 2rem 5rem;
+  font-size: 1.4rem;
+}
+
+#modal .enter_text {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  font-size: 1.6rem;
+  color: var(--green-color);
+}
+
+.form {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.form .text_title,
+.form .value {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3.5rem;
+  font-size: 1.4rem;
+  gap: 0.8rem;
+  width: 28rem;
+}
+
+.form .text_title input,
+.form .value input {
+  background-color: var(--input-bg-color);
+  border: none;
+  padding: 1.3rem 2rem;
+  border-radius: 1rem;
+  color: #fff;
+}
+
+.transaction{
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn_submit {
+  display: flex;
+  justify-content: center;
+}
+
+.btn_submit input {
+  height: 5.5rem;
+  width: 20rem;
+  font-size: 2.4rem;
+  border-radius: 4rem;
+  border: none;
+  color: #fff;
+  background-color: var(--green-color);
+}
+
+#modal {
+  transition: 1s all;
+  opacity: 1;
+}
+
+#modal.hide {
+  opacity: 0;
 }
