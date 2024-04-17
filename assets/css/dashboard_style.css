@@ -29,6 +29,10 @@ header {
   align-items: center;
 }
 
+.opacity{
+  opacity: 0.5;
+}
+
 .icon {
   height: 4rem;
   width: 4rem;
@@ -185,7 +189,7 @@ header {
   border: none;
 }
 
-#modal {
+#modal_dashboard {
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -200,12 +204,12 @@ header {
   color: #fff;
 }
 
-.close_modal {
+.close_modal_dashboard {
   display: flex;
   justify-content: end;
 }
 
-.close_modal .btn_close {
+.close_modal_dashboard .btn_close_dashboard {
   background-color: var(--close-button-bg-color);
   padding: 0.3rem 0.5rem;
   margin: 0.8rem 0.5rem;
@@ -216,12 +220,12 @@ header {
   cursor: pointer;
 }
 
-#modal .welcome_text {
+#modal_dashboard .welcome_text {
   margin: 2rem 5rem;
   font-size: 1.4rem;
 }
 
-#modal .enter_text {
+#modal_dashboard .enter_text {
   display: flex;
   justify-content: center;
   margin-top: 1.5rem;
@@ -246,7 +250,8 @@ header {
 }
 
 .form .text_title input,
-.form .value input {
+.form .value input,
+#options {
   background-color: var(--input-bg-color);
   border: none;
   padding: 1.3rem 2rem;
@@ -254,31 +259,55 @@ header {
   color: #fff;
 }
 
+#options{
+  margin: 2rem 0;
+  width: 28rem;
+}
+
 .transaction{
   display: flex;
   justify-content: space-between;
 }
 
+.transaction .gain{
+  background-color: var(--green-color);
+}
+
+.transaction .loss{
+  background-color: var(--bg-color-expense);
+}
+
+.transaction .gain,
+.transaction .loss{
+  text-align: center;
+  color: #fff;
+  padding: 1rem;
+  width: 10rem;
+  font-size: 1.4rem;
+  border-radius: .5rem;
+}
+
 .btn_submit {
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 .btn_submit input {
-  height: 5.5rem;
-  width: 20rem;
-  font-size: 2.4rem;
+  height: 4.5rem;
+  width: 10rem;
+  font-size: 1.4rem;
   border-radius: 4rem;
   border: none;
   color: #fff;
   background-color: var(--green-color);
 }
 
-#modal {
+#modal_dashboard {
   transition: 1s all;
   opacity: 1;
 }
 
-#modal.hide {
+#modal_dashboard.hide {
   opacity: 0;
 }
+
+
